@@ -97,15 +97,15 @@ def hero():
         if(newperiod%2==0):
             sum=getSum(current)+check
             if(sum%2==0):
-                print(newperiod+1," : ❤️")
+                print(newperiod+1," : Red")
             else:
-                print(newperiod+1,"  : 💚")
+                print(newperiod+1,"  : Green")
         else:
             sum=getSum(current)+check+1
             if(sum%2==0):
-                print(newperiod+1,"  : ❤️")
+                print(newperiod+1,"  : Red")
             else:
-                print(newperiod+1,"   : 💚")
+                print(newperiod+1,"   : Green")
         newperiod+=1
         numbers.append(current)
         y=input("Do you want to play : Press 1 and 0 to exit \n")
@@ -137,10 +137,10 @@ if(expirydate>today):
             period=280
             hero()
     elif(now>Third and now<Thirdend):
-            period=180
+            period=190
             hero()
     elif(True):
-            period=180
+            period=190
             hero()
     else:
         banner='figlet RXCE'
